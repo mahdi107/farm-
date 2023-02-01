@@ -12,7 +12,7 @@ import 'AddImage.dart';
 // ignore: must_be_immutable
 class CreateNewFile extends StatelessWidget {
   CreateNewFile({super.key, });
-  // String type;
+  
 
   bool isNumeric(String s) {
     // ignore: unnecessary_null_comparison

@@ -10,7 +10,7 @@ class DetailsBody extends StatefulWidget {
   DetailsBody({super.key, this.product, this.id});
   var product;
   var id;
-  // var type;
+  
 
   @override
   State<DetailsBody> createState() => _DetailsBodyState();

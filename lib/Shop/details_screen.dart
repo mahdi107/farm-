@@ -1,15 +1,17 @@
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:myapp/Shop/constans.dart';
 
 import 'details_body.dart';
 
-
 class DetailsScreen extends StatefulWidget {
-   DetailsScreen({super.key, this.product, this.id, });
+  DetailsScreen({
+    super.key,
+    this.product,
+    this.id,
+  });
   static const String screenRoute = "DetailsSceen";
-  // final type;
+
   var product;
   var id;
 
@@ -18,13 +20,15 @@ class DetailsScreen extends StatefulWidget {
 }
 
 class _DetailsScreenState extends State<DetailsScreen> {
-  
-@override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
       appBar: DetailsAppbar(context),
-      body: DetailsBody(product: widget.product, id: widget.id,),
+      body: DetailsBody(
+        product: widget.product,
+        id: widget.id,
+      ),
     );
   }
 

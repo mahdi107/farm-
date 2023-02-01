@@ -76,17 +76,15 @@ class _AddImageState extends State<AddImage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(width: 150,
-          height: 50,
+          Container(
+            width: 150,
+            height: 50,
             child: ElevatedButton(
               onPressed: () {
                 myAlert();
               },
-              child:  Row(
-                children: [
-                  Text('Upload Photo'),
-                  Icon(Icons.download)
-                ],
+              child: Row(
+                children: [Text('Upload Photo'), Icon(Icons.download)],
               ),
             ),
           ),
@@ -113,25 +111,25 @@ class _AddImageState extends State<AddImage> {
                   "No Image",
                   style: TextStyle(fontSize: 20),
                 ),
-              Container(width: 110,
-              height: 50,
-                child: ElevatedButton(
-                  
-                  
-                  
-                  onPressed: () {
-                    if (widget.form.currentState!.validate()) {
-                      widget.form.currentState
-                      !.save();
-                      widget.AddItemToCart(image);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Processing Data')),
-                      );
-                    }
-                  },
-                  child:  Row(children: [Text("Submit"), Icon(Icons.add_box),]),
-                ),
-              ),
+          Container(
+            width: 110,
+            height: 50,
+            child: ElevatedButton(
+              onPressed: () {
+                if (widget.form.currentState!.validate()) {
+                  widget.form.currentState!.save();
+                  widget.AddItemToCart(image);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Processing Data')),
+                  );
+                }
+              },
+              child: Row(children: [
+                Text("Submit"),
+                Icon(Icons.add_box),
+              ]),
+            ),
+          ),
         ],
       ),
     );

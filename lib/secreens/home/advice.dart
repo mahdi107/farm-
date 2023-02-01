@@ -25,10 +25,9 @@ class _AdviceState extends State<Advice> with TickerProviderStateMixin {
       child: Scaffold(
           appBar: AppBar(backgroundColor: Color.fromARGB(255, 156, 182, 255)),
           backgroundColor: Colors.white,
-          // appBar: const AppBarTwo(),
+          
           drawer: Drawer_screen(),
-          body: SingleChildScrollView(
-              child: Column(children: [
+          body:  ListView(children: [
             Container(
                 width: width,
                 height: height,
@@ -170,7 +169,7 @@ class _AdviceState extends State<Advice> with TickerProviderStateMixin {
                         ),
                       )),
                 ]))
-          ]))),
+          ])),
     );
   }
 }

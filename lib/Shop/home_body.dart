@@ -7,9 +7,9 @@ import 'package:myapp/Shop/product_cart.dart';
 
 class HomeBody extends StatelessWidget {
    HomeBody({super.key, 
-  //  required this.shop
+  
    });
-  //  String shop;
+ 
 
   @override
   Widget build(BuildContext context) {

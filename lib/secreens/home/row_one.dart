@@ -24,7 +24,7 @@ class _row_oneState extends State<row_one> {
                 Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
               SizedBox(width: 0),
               Containermidle(
-                name: 'tips ',
+                name: 'Advices ',
                 OnTapping: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return Advice();
@@ -41,45 +41,6 @@ class _row_oneState extends State<row_one> {
                 },
               ),
               SizedBox(width: 20),
-              Containermidle(
-                name: 'wethar',
-                OnTapping: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return wethar_secreen();
-                  }));
-                },
-              ),
-              // SizedBox(width: 20),
-              // Containermidle(
-              //     name: 'Bird',
-              //     OnTapping: () {
-              //       Navigator.push(context,
-              //           MaterialPageRoute(builder: (context) {
-              //         return BirdScreen();
-              //       }));
-              //     },
-              //     imagepath: 'images/bird.svg'),
-              // SizedBox(width: 20),
-              // Containermidle(
-              //     name: 'Horse',
-              //     OnTapping: () {
-              //       Navigator.push(context,
-              //           MaterialPageRoute(builder: (context) {
-              //         return HorseScreen();
-              //       }));
-              //     },
-              //     imagepath: 'images/horse.svg'),
-              // SizedBox(width: 20),
-              // Containermidle(
-              //     name: 'Rabbit',
-              //     OnTapping: () {
-              //       Navigator.push(context,
-              //           MaterialPageRoute(builder: (context) {
-              //         return RabbitScreen();
-              //       }));
-              //     },
-              //     imagepath: 'images/rab.svg'),
-              // SizedBox(width: 20),
             ]),
           ),
         ),

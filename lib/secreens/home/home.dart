@@ -3,6 +3,7 @@ import 'package:myapp/secreens/Drawer_screen.dart';
 import 'package:myapp/secreens/home/row_one.dart';
 import 'package:myapp/secreens/home/row_two.dart';
 
+
 import '../../Chat/chat.dart';
 
 class Home_Secreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _Home_SecreenState extends State<Home_Secreen> {
         child: Scaffold(
       appBar: AppBar(backgroundColor: Color.fromARGB(255, 156, 182, 255)),
       backgroundColor: Colors.white,
-      // appBar: const CatAppBar(),
+     
       drawer: const Drawer_screen(),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -73,13 +74,12 @@ class _Home_SecreenState extends State<Home_Secreen> {
                     child: const Align(
                         alignment: Alignment.center, child: row_one()),
                   ),
-                  Positioned(
+                   Positioned(
                     height: height / 6,
                     left: width * 0.025 + width / 10,
                     top: 6 * height / 45 + height / 7,
                     width: width - (width / 4),
-                    child: const Align(
-                        alignment: Alignment.center, child: row_two()),
+                    child: const Align(alignment: Alignment.center, child: row_two()),
                   ),
                   Positioned(
                     left: width / 10,
@@ -132,57 +132,6 @@ class _Home_SecreenState extends State<Home_Secreen> {
                       ),
                     ),
                   ),
-                  // Positioned(
-                  //     left: width / 10,
-                  //     top: 3 * (height / 7) + (10 * height / 45),
-                  //     height: 2 * height / 45,
-                  //     width: width - (width / 5),
-                  //     child: const Text(
-                  //       'Should you get a pet ?',
-                  //       style: TextStyle(
-                  //         fontSize: 20,
-                  //         fontFamily: 'Comfortaa-VariableFont_wght',
-                  //         letterSpacing: 1,
-                  //         fontWeight: FontWeight.bold,
-                  //       ),
-                  //     )),
-                  // Positioned(
-                  //     left: width * 0.025 + width / 10,
-                  //     top: 3 * (height / 7) +
-                  //         (9 * height / 45) +
-                  //         (3 * height / 45),
-                  //     height: 2 * height / 45,
-                  //     width: width - (width / 5),
-                  //     child: Row(
-                  //       children: [
-                  //         const Text(
-                  //           "Let's start the",
-                  //           style: TextStyle(
-                  //             fontSize: 16,
-                  //             fontFamily: 'Comfortaa-VariableFont_wght',
-                  //             letterSpacing: 1,
-                  //           ),
-                  //         ),
-                  //         // TextButton(
-                  //         //   child: const Text(
-                  //         //     'QUIZ !',
-                  //         //     style: TextStyle(
-                  //         //       fontSize: 16,
-                  //         //       fontFamily: 'Comfortaa-VariableFont_wght',
-                  //         //       letterSpacing: 1,
-                  //         //       color: Color.fromRGBO(13, 71, 161, 1),
-                  //         //     ),
-                  //         //   ),
-                  //         //   onPressed: () {
-                  //         //     Navigator.push(context, MaterialPageRoute(
-                  //         //       builder: (context) {
-                  //         //         return const WritingView();
-                  //         //       },
-                  //         //     ));
-                  //         //   },
-                  //         // ),
-                  //       ],
-                  //     )),
                   Positioned(
                       left: width / 10,
                       height: height / 7,

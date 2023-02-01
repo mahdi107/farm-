@@ -21,9 +21,9 @@ class Containermidle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              width: width / 5,
+              width: width / 3,
               height: height / 6,
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(45),
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
@@ -37,18 +37,7 @@ class Containermidle extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  // Center(
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.only(bottom: 0),
-                  //     child: SvgPicture.asset(
-                  //       "$imagepath",
-                  //       width: width / 18,
-                  //       height: height / 16,
-                  //       alignment: Alignment.center,
-                  //       fit: BoxFit.contain,
-                  //     ),
-                  //   ),
-                  // ),
+                 
                   SizedBox(
                     height: 7,
                   ),
@@ -59,7 +48,7 @@ class Containermidle extends StatelessWidget {
                       child: Text(
                         '${name}',
                         style: TextStyle(
-                          fontSize: 10,
+                          fontSize: 20,
                           fontFamily: 'Comfortaa-VariableFont_wght',
                           letterSpacing: 1,
                           fontWeight: FontWeight.w500,

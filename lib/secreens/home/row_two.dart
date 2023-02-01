@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
-
+import 'package:myapp/secreens/home/static.dart';
 import '../../logic/containermidle.dart';
+import '../wetharsecreen.dart';
 
 class row_two extends StatefulWidget {
   const row_two({super.key});
@@ -22,36 +22,26 @@ class _row_twoState extends State<row_two> {
             child:
                 Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
               SizedBox(width: 0),
-              // Containermidle(
-              //     name: 'Bird',
-              //     OnTapping: () {
-              //       // Navigator.push(context,
-              //       //     MaterialPageRoute(builder: (context) {
-              //       //   return BirdScreen();
-              //       }
-              //       // ));
-                  
-              //    ),
+              Containermidle(
+                  name: 'Statistics',
+                  OnTapping: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return stat();
+                  }
+                  ));
+                  }
+                  ),
               SizedBox(width: 20),
-              // Containermidle(
-              //     name: 'Horse',
-              //     OnTapping: () {
-                    // Navigator.push(context,
-                    //     MaterialPageRoute(builder: (context) {
-                    //   return HorseScreen();
-                    // }));
-                //   },
-                //  ),
-              // SizedBox(width: 20),
-              // Containermidle(
-              //     name: 'Rabbit',
-              //     OnTapping: () {
-              //       // Navigator.push(context,
-              //       //     MaterialPageRoute(builder: (context) {
-              //       //   return RabbitScreen();
-              //       // }));
-              //     },
-              //    ),
+              Containermidle(
+                name: 'Wethar',
+                OnTapping: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return wethar_secreen();
+                  }));
+                },
+              ),
+              SizedBox(width: 20),
             ]),
           ),
         ),

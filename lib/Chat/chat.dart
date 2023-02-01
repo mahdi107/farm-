@@ -17,18 +17,13 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
           title: Text("Welcome to chat group! "),
           backgroundColor: Color.fromARGB(255, 156, 182, 255)),
-      body: Container(
-        decoration: BoxDecoration(
-            image: DecorationImage(
-          image: AssetImage("images/message.jpg"),
-        )),
-        child: Column(
+      body: 
+       Column(
           children: [
             Expanded(child: Message()),
             NewMessage(),
           ],
         ),
-      ),
     );
   }
 }
